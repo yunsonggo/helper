@@ -1,7 +1,7 @@
 package mail
 
 import (
-	"github.com/yunsonggo/helper/types"
+	"github.com/yunsonggo/helper/v3/types"
 	"gopkg.in/gomail.v2"
 )
 

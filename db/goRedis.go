@@ -4,7 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/yunsonggo/helper/types"
+	"github.com/yunsonggo/helper/v3/types"
+
 	"time"
 
 	"github.com/go-redis/redis/v8"

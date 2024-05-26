@@ -1,7 +1,7 @@
 package loggers
 
 import (
-	"github.com/yunsonggo/helper/types"
+	"github.com/yunsonggo/helper/v3/types"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"

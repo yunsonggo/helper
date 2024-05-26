@@ -6,8 +6,9 @@ import (
 	"github.com/apache/rocketmq-client-go/v2/admin"
 	"github.com/apache/rocketmq-client-go/v2/primitive"
 	"github.com/apache/rocketmq-client-go/v2/producer"
-	"github.com/yunsonggo/helper/algorithms"
-	"github.com/yunsonggo/helper/types"
+	"github.com/yunsonggo/helper/v3/algorithms"
+	"github.com/yunsonggo/helper/v3/types"
+
 	"time"
 )
 
