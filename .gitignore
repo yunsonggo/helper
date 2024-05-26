@@ -8,12 +8,42 @@
 *.so
 *.dylib
 
+# Config file
+/conf
+*.yaml
+*/*.yaml
+
+# Log file
+logs/
+*.log
+*/logs/
+*/*/logs/
+
 # Test binary, built with `go test -c`
 *.test
+tests/
+test/
+
+# Runtime Files
+wallet/
+abijson/
+.idea/
+.vscode/
+public/
+.*
+.env
+.env.*
+!/.gitignore
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+/out
 
+# Temp
+/tmp
+/temp
+*.tmp
+*.temp
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
