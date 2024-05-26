@@ -49,3 +49,5 @@ public/
 
 # Go workspace file
 go.work
+
+.idea
