@@ -1,8 +1,6 @@
-module github.com/yunsonggo/helper
+module github.com/PCM-Labs/pcm-srv-4337/v3
 
-go 1.22
-
-toolchain go1.22.2
+go 1.22.2
 
 require (
 	github.com/alibaba/sentinel-golang v1.0.4
@@ -17,6 +15,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/nacos-group/nacos-sdk-go v1.1.4
 	github.com/spf13/viper v1.18.2
+	github.com/yunsonggo/helper v1.1.7
 	go.uber.org/zap v1.27.0
 	golang.org/x/crypto v0.23.0
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
