@@ -1,0 +1,7 @@
+2024-05-27T00:00:03.431+0800	[34mINFO[0m	clients/client_factory.go:47	logDir:<tmp/nacos/log>   cacheDir:<tmp/nacos/cache>
+2024-05-27T00:00:03.565+0800	[34mINFO[0m	config_client/config_client.go:266	Cancel listen config DataId:test.yaml Group:test
+2024-05-27T00:00:03.934+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:test.yamltest918de6caa98ee2d01f9eb4f7afa2e9e240e79647-90d0-439a-8fc7-9456d6920b28 tenant:40e79647-90d0-439a-8fc7-9456d6920b28] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 Long-Pulling-Timeout-No-Hangup:true accessKey: secretKey:] 
+
+2024-05-27T00:00:03.957+0800	[34mINFO[0m	config_client/config_client.go:433	[client.ListenConfig] no change
+2024-05-27T00:00:03.968+0800	[34mINFO[0m	config_client/config_proxy.go:180	[client.ListenConfig] request params:map[Listening-Configs:test.yamltest918de6caa98ee2d01f9eb4f7afa2e9e240e79647-90d0-439a-8fc7-9456d6920b28 tenant:40e79647-90d0-439a-8fc7-9456d6920b28] header:map[Content-Type:application/x-www-form-urlencoded;charset=utf-8 Long-Pulling-Timeout:30000 accessKey: secretKey:] 
+

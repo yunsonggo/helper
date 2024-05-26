@@ -104,12 +104,7 @@ func WithNacos(nc *types.Nacos, changeChan chan *types.HotUpdateSetting) error {
 	}
 	changeChan <- data
 
-	cancelErr := configClient.CancelListenConfig(voConfig)
-	if cancelErr != nil {
-		fmt.Printf("cancel err:%v\n", cancelErr)
-	} else {
-		fmt.Println("cancel success")
-	}
+	_ = configClient.CancelListenConfig(voConfig)
 
 	err = configClient.ListenConfig(voConfig)
 	return err
