@@ -4,7 +4,8 @@ import (
 	"bytes"
 	"fmt"
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
-	"github.com/yunsonggo/helper/types"
+	"github.com/yunsonggo/helper/v3/types"
+
 	"io"
 	"log"
 	"strings"

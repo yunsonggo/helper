@@ -5,8 +5,8 @@ import (
 	"github.com/alibaba/sentinel-golang/core/base"
 	"github.com/alibaba/sentinel-golang/core/config"
 	"github.com/alibaba/sentinel-golang/core/flow"
-	"github.com/yunsonggo/helper/free"
-	"github.com/yunsonggo/helper/types"
+	"github.com/yunsonggo/helper/v3/free"
+	"github.com/yunsonggo/helper/v3/types"
 )
 
 func InitQps(logPath string) error {

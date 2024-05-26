@@ -1,7 +1,7 @@
 package db
 
 import (
-	"github.com/yunsonggo/helper/types"
+	"github.com/yunsonggo/helper/v3/types"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
