@@ -3,11 +3,11 @@ package read
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/PCM-Labs/pcm-srv-4337/v3/types"
 	"github.com/nacos-group/nacos-sdk-go/clients"
 	_ "github.com/nacos-group/nacos-sdk-go/clients/config_client"
 	"github.com/nacos-group/nacos-sdk-go/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/vo"
-	"github.com/yunsonggo/helper/types"
 )
 
 func InNacos(nc *types.Nacos, app *types.App, configType vo.ConfigType, changeChan chan *types.HotUpdate) error {
@@ -57,7 +57,7 @@ func InNacos(nc *types.Nacos, app *types.App, configType vo.ConfigType, changeCh
 	return err
 }
 
-func WithNacos(nc *types.Nacos, changeChan chan *types.HotUpdateSetting) error {
+func WithNacos(nc *types.Nacos, configType vo.ConfigType, changeChan chan *types.HotUpdateSetting) error {
 	nacosServerConfig := []constant.ServerConfig{
 		{
 			IpAddr: nc.NacosAddr,
@@ -77,6 +77,7 @@ func WithNacos(nc *types.Nacos, changeChan chan *types.HotUpdateSetting) error {
 	voConfig := vo.ConfigParam{
 		DataId: nc.DataId,
 		Group:  nc.Group,
+		Type:   configType,
 		OnChange: func(namespace, group, dataId, data string) {
 			name := fmt.Sprintf("namespace:%s,group:%s,dataId:%s", namespace, group, dataId)
 			value := &types.HotUpdateSetting{
